@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {SafeCast} from './SafeCast.sol';
+import {SafeCast} from "./SafeCast.sol";
 
-import {TickMath} from './TickMath.sol';
+import {TickMath} from "./TickMath.sol";
 
 /// @title Tick
 /// @notice Contains functions for managing tick processes and relevant calculations
@@ -182,8 +182,7 @@ library Tick {
             info.feeGrowthOutside0X128 = feeGrowthGlobal0X128 - info.feeGrowthOutside0X128;
             info.feeGrowthOutside1X128 = feeGrowthGlobal1X128 - info.feeGrowthOutside1X128;
             info.secondsPerLiquidityOutsideX128 =
-                secondsPerLiquidityCumulativeX128 -
-                info.secondsPerLiquidityOutsideX128;
+                secondsPerLiquidityCumulativeX128 - info.secondsPerLiquidityOutsideX128;
             info.tickCumulativeOutside = tickCumulative - info.tickCumulativeOutside;
             info.secondsOutside = time - info.secondsOutside;
             liquidityNet = info.liquidityNet;
