@@ -1,3 +1,4 @@
+import "@nomicfoundation/hardhat-foundry";
 import '@nomiclabs/hardhat-ethers'
 import '@nomiclabs/hardhat-etherscan'
 import '@nomiclabs/hardhat-waffle'

@@ -3,3 +3,6 @@ cache/
 crytic-export/
 node_modules/
 typechain/
+.idea/
+out/
+cache_forge/
